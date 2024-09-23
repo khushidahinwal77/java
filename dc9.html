@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Ans 9.</h2>
+<pre> import java.text.ParseException;
+    import java.text.SimpleDateFormat;
+    import java.util.Date;
+    
+    public class Main {
+        public static void main(String[] args) {
+            // String to be converted
+            String dateString = "2024-09-18";
+            
+            // Define the date format
+            SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+            
+            try {
+                // Convert String to Date
+                Date date = formatter.parse(dateString);
+                
+                // Output the result
+                System.out.println("The Date value is: " + date);
+            } catch (ParseException e) {
+                // Handle parsing error
+                System.out.println("Error parsing date: " + e.getMessage());
+            }
+        }
+    }</pre>
+</body>
+</html>

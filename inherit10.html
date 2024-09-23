@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> <h1>question10</h1>
+    <pre>        
+        class Employee {
+            String name;
+            String address;
+            double salary;
+            String jobTitle;
+            
+            Employee(String name, String address, double salary, String jobTitle) {
+            this.name = name;
+            this.address = address;
+            this.salary = salary;
+            this.jobTitle = jobTitle;
+            }
+            double calculateBonus() {
+            return salary * 0.1;
+            }
+            }
+            
+            class Manager extends Employee {
+            Manager(String name, String address, double salary) {
+            super(name, address, salary, "Manager");
+            }
+            void generateReport() {
+            System.out.println("Generating report for " + name);
+            }
+            }
+            
+            class Developer extends Employee {
+            Developer(String name, String address, double salary) {
+            super(name, address, salary, "Developer");
+            }
+            }
+            
+            class Programmer extends Employee {
+            Programmer(String name, String address, double salary) {
+            super(name, address, salary, "Programmer");
+            }
+            }
+            
+            class Main {
+            public static void main(String ap[]) {
+            Manager manager = new Manager("Alice", "123 St", 60000);
+            manager.generateReport();
+            System.out.println("Bonus: " + manager.calculateBonus());
+            }
+            }  
+    
+</pre>
+    
+</body>
+</html>
+    

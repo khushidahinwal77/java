@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Question24</h1> 
+    <pre>abstract class Shape2D {
+        abstract void draw();
+        abstract void resize(double factor);
+        }
+        
+        class Rectangle extends Shape2D {
+        void draw() {
+        System.out.println("Drawing Rectangle");
+        }
+        void resize(double factor) {
+        System.out.println("Resizing Rectangle by " + factor);
+        }
+        }
+        
+        class Circle extends Shape2D {
+        void draw() {
+        System.out.println("Drawing Circle");
+        }
+        void resize(double factor) {
+        System.out.println("Resizing Circle by " + factor);
+        }
+        }
+        
+        class Main {
+        public static void main(String ap[]) {
+        Shape2D rectangle = new Rectangle();
+        Shape2D circle = new Circle();
+        rectangle.draw();
+        circle.resize(1.5);
+        }
+        }</pre>
+</body>
+</html>

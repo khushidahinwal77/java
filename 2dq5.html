@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>q5</h1>
+    <pre>
+        import java.util.Scanner;
+
+        class Matrix
+         {
+            public static void main(String[] args) {
+                Scanner scanner = new Scanner(System.in);
+        
+                // Get the number of rows and columns for the matrices
+                System.out.print("Enter the number of rows: ");
+                int rows = scanner.nextInt();
+                System.out.print("Enter the number of columns: ");
+                int cols = scanner.nextInt();
+        
+                // Initialize the two matrices
+                int[][] matrix1 = new int[rows][cols];
+                int[][] matrix2 = new int[rows][cols];
+        
+                // Get elements for the first matrix
+                System.out.println("Enter the elements of the first matrix:");
+                for (int i = 0; i < rows; i++) {
+                    for (int j = 0; j < cols; j++) {
+                        System.out.print("Element at [" + i + "][" + j + "]: ");
+                        matrix1[i][j] = scanner.nextInt();
+                    }
+                }
+        
+                // Get elements for the second matrix
+                System.out.println("Enter the elements of the second matrix:");
+                for (int i = 0; i < rows; i++) {
+                    for (int j = 0; j < cols; j++) {
+                        System.out.print("Element at [" + i + "][" + j + "]: ");
+                        matrix2[i][j] = scanner.nextInt();
+                    }
+                }
+        
+                // Check if the matrices are equal
+                boolean areEqual = true;
+                for (int i = 0; i < rows; i++) {
+                    for (int j = 0; j < cols; j++) {
+                        if (matrix1[i][j] != matrix2[i][j]) {
+                            areEqual = false;
+                            break;
+                        }
+                    }
+                    if (!areEqual) {
+                        break;
+                    }
+                }
+        
+                // Display the result
+                if (areEqual) {
+                    System.out.println("The two matrices are equal.");
+                } else {
+                    System.out.println("The two matrices are not equal.");
+                }
+        
+                scanner.close();
+            }
+        }
+                    
+              
+    </pre>
+    
+</body>
+</html>

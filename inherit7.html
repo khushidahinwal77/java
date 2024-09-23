@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ques7</h1>
+    <pre>
+        class Person {
+            String firstName;
+            String lastName;
+            String getFirstName() {
+            return firstName;
+            }
+            String getLastName() {
+            return lastName;
+            }
+            }
+            
+            class Employee extends Person {
+            String jobTitle;
+            String getLastName() {
+            return lastName + " (" + jobTitle + ")";
+            }
+            String getEmployeeId() {
+            return "Employee ID: 12345";
+            }
+            }
+            
+            class Main {
+            public static void main(String ap[]) {
+            Employee emp = new Employee();
+            emp.firstName = "John";
+            emp.lastName = "Doe";
+            emp.jobTitle = "Developer";
+            System.out.println(emp.getFirstName() + " " + emp.getLastName());
+            }
+            }
+        
+    </pre>
+    
+</body>
+</html>

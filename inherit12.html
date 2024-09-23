@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ques12</h1>
+    <pre>
+        class Base {
+            void display() {
+            System.out.println("Base display");
+            }
+            }
+            
+            class Derived extends Base {
+            void display() {
+            super.display();
+            System.out.println("Derived display");
+            }
+            }
+            
+            class Main {
+            public static void main(String ap[]) {
+            Derived obj = new Derived();
+            obj.display();
+            }
+            }    
+    </pre>
+
+    
+</body>
+</html>

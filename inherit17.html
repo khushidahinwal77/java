@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ques17</h1>
+    <pre>
+
+        abstract class BankAccount {
+            abstract void deposit(double amount);
+            abstract void withdraw(double amount);
+            }
+            
+            class SavingsAccount extends BankAccount {
+            double balance;
+            SavingsAccount() {
+            this.balance = 0;
+            }
+            void deposit(double amount) {
+            balance += amount;
+            }
+            void withdraw(double amount) {
+            if (amount <= balance) {
+            balance -= amount;
+            } else {
+            System.out.println("Insufficient funds");
+            }
+            }
+            }
+            
+            class CurrentAccount extends BankAccount {
+            double balance;
+            CurrentAccount() {
+            this.balance = 0;
+            }
+            void deposit(double amount) {
+            balance += amount;
+            }
+            void withdraw(double amount) {
+            balance -= amount;
+            }
+            }
+            
+            class Main {
+            public static void main(String ap[]) {
+            BankAccount savings = new SavingsAccount();
+            savings.deposit(1000);
+            savings.withdraw(500);
+            BankAccount current = new CurrentAccount();
+            current.deposit(2000);
+            current.withdraw(1500);
+            }
+            }    
+    </pre>
+    
+</body>
+</html>

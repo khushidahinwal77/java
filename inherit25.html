@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>question25</h1>
+<pre>abstract class Bird {
+    abstract void fly();
+    abstract void makeSound();
+    }
+    
+    class Eagle extends Bird {
+    void fly() {
+    System.out.println("Eagle soars high");
+    }
+    void makeSound() {
+    System.out.println("Eagle screeches");
+    }
+    }
+    
+    class Hawk extends Bird {
+    void fly() {
+    System.out.println("Hawk glides gracefully");
+    }
+    void makeSound() {
+    System.out.println("Hawk calls");
+    }
+    }
+    
+    class Main {
+    public static void main(String ap[]) {
+    Bird eagle = new Eagle();
+    Bird hawk = new Hawk();
+    eagle.fly();
+    hawk.makeSound();
+    }
+    }</pre>
+</body>
+</html>

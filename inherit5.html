@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>question5</h1>
+    <pre>class Shape {
+        double getArea() {
+        return 0;
+        }
+        }
+        
+        class Rectangle extends Shape {
+        double width;
+        double height;
+        Rectangle(double width, double height) {
+        this.width = width;
+        this.height = height;
+        }
+        double getArea() {
+        return width * height;
+        }
+        }
+        
+        class Main {
+        public static void main(String ap[]) {
+        Rectangle rect = new Rectangle(5, 10);
+        System.out.println("Area of Rectangle: " + rect.getArea());
+        }
+        }</pre>
+</body>
+</html>

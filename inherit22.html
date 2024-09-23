@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=S, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>question22</h1>
+    <pre>abstract class Person {
+        abstract void eat();
+        abstract void exercise();
+        }
+        
+        class Athlete extends Person {
+        void eat() {
+        System.out.println("Athlete eats healthy food");
+        }
+        void exercise() {
+        System.out.println("Athlete trains daily");
+        }
+        }
+        
+        class LazyPerson extends Person {
+        void eat() {
+        System.out.println("Lazy person eats junk food");
+        }
+        void exercise() {
+        System.out.println("Lazy person avoids exercise");
+        }
+        }
+        
+        class Main {
+        public static void main(String ap[]) {
+        Person athlete = new Athlete();
+        Person lazy = new LazyPerson();
+        athlete.eat();
+        lazy.exercise();
+        }
+        }</pre>
+    
+</body>
+</html>

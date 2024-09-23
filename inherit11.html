@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ques11</h1>
+    <pre>
+        class Parent {
+            String name;
+            Parent(String name) {
+            this.name = name;
+            }
+            }
+            
+            class Child extends Parent {
+            Child(String name) {
+            super(name);
+            System.out.println("Child name: " + this.name);
+            }
+            }
+            
+            class Main {
+            public static void main(String ap[]) {
+            Child child = new Child("John");
+            }
+            }  
+    </pre>
+    
+</body>
+</html>

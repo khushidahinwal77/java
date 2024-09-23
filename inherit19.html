@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ques19</h1>
+    <pre>
+
+        abstract class Employee {
+            abstract double calculateSalary();
+            abstract void displayInfo();
+            }
+            
+            class Manager extends Employee {
+            double salary;
+            Manager(double salary) {
+            this.salary = salary;
+            }
+            double calculateSalary() {
+            return salary + (salary * 0.1);
+            }
+            void displayInfo() {
+            System.out.println("Manager Salary: " + calculateSalary());
+            }
+            }
+            
+            class Programmer extends Employee {
+            double salary;
+            Programmer(double salary) {
+            this.salary = salary;
+            }
+            double calculateSalary() {
+            return salary;
+            }
+            void displayInfo() {
+            System.out.println("Programmer Salary: " + calculateSalary());
+            }
+            }
+            
+            class Main {
+            public static void main(String ap[]) {
+            Employee manager = new Manager(5000);
+            Employee programmer = new Programmer(4000);
+            manager.displayInfo();
+            programmer.displayInfo();
+            }
+            }  
+    </pre>
+    
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Ans 10.</h2>
+<pre>
+    import java.text.SimpleDateFormat;
+            import java.util.Date;
+            
+            public class Main {
+                public static void main(String[] args) {
+                    // Current date
+                    Date date = new Date();
+                    
+                    // Define the date format
+                    SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+                    
+                    // Convert Date to String
+                    String dateString = formatter.format(date);
+                    
+                    // Output the result
+                    System.out.println("The formatted date string is: " + dateString);
+                }
+            }
+            
+</pre>
+</body>
+</html>

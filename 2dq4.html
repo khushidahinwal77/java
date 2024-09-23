@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>question4</h1>
+<pre> 
+    import java.util.Scanner;
+
+    class MatrixSubtraction {
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+    
+            // Get the number of rows and columns for the matrices
+            System.out.print("Enter the number of rows: ");
+            int rows = scanner.nextInt();
+            System.out.print("Enter the number of columns: ");
+            int cols = scanner.nextInt();
+    
+            // Initialize the two matrices and the result matrix
+            int[][] matrix1 = new int[rows][cols];
+            int[][] matrix2 = new int[rows][cols];
+            int[][] diffMatrix = new int[rows][cols];
+    
+            // Get elements for the first matrix
+            System.out.println("Enter the elements of the first matrix:");
+            for (int i = 0; i < rows; i++) {
+                for (int j = 0; j < cols; j++) {
+                    System.out.print("Element at [" + i + "][" + j + "]: ");
+                    matrix1[i][j] = scanner.nextInt();
+                }
+            }
+    
+            // Get elements for the second matrix
+            System.out.println("Enter the elements of the second matrix:");
+            for (int i = 0; i < rows; i++) {
+                for (int j = 0; j < cols; j++) {
+                    System.out.print("Element at [" + i + "][" + j + "]: ");
+                    matrix2[i][j] = scanner.nextInt();
+                }
+            }
+    
+            // Subtract the two matrices
+            for (int i = 0; i < rows; i++) {
+                for (int j = 0; j < cols; j++) {
+                    diffMatrix[i][j] = matrix1[i][j] - matrix2[i][j];
+                }
+            }
+    
+            // Display the difference matrix
+            System.out.println("The resultant matrix after subtraction is:");
+            for (int i = 0; i < rows; i++) {
+                for (int j = 0; j < cols; j++) {
+                    System.out.print(diffMatrix[i][j] + " ");
+                }
+                System.out.println(); // Move to the next line after each row
+            }
+    
+            scanner.close();
+        }
+    }
+          
+</pre>    
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ques26</h1>
+    <pre>abstract class GeometricShape {
+        abstract double area();
+        abstract double perimeter();
+        }
+        
+        class Triangle extends GeometricShape {
+        double base, height;
+        Triangle(double base, double height) {
+        this.base = base;
+        this.height = height;
+        }
+        double area() {
+        return 0.5 * base * height;
+        }
+        double perimeter() {
+        return base * 3; // Simplified for an equilateral triangle
+        }
+        }
+        
+        class Square extends GeometricShape {
+        double side;
+        Square(double side) {
+        this.side = side;
+        }
+        double area() {
+        return side * side;
+        }
+        double perimeter() {
+        return 4 * side;
+        }
+        }
+        
+        class Main {
+        public static void main(String ap[]) {
+        GeometricShape triangle = new Triangle(3, 4);
+        GeometricShape square = new Square(5);
+        System.out.println("Triangle Area: " + triangle.area());
+        System.out.println("Square Area: " + square.area());
+        }
+        }</pre>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>question1</h1>
+    <pre>
+        class ArrayCopy {
+            public static void main(String[] args) {
+                // Original array
+                int[] originalArray = {1, 2, 3, 4, 5, 6};
+        
+                // Create another array of the same length
+                int[] copiedArray = new int[originalArray.length];
+        
+                // Copy elements from originalArray to copiedArray
+                for (int i = 0; i < originalArray.length; i++) {
+                    copiedArray[i] = originalArray[i];
+                }
+        
+                // Display the copied array
+                System.out.println("Copied array elements:");
+                for (int i = 0; i < copiedArray.length; i++) {
+                    System.out.print(copiedArray[i] + " ");
+                }
+            }
+        }
+        
+    </pre>
+    
+</body>
+</html>

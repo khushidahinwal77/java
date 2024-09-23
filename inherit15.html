@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ques15</h1>
+    <pre> 
+
+        abstract class Animal {
+            abstract void sound();
+            }
+            
+            class Lion extends Animal {
+            void sound() {
+            System.out.println("Roar");
+            }
+            }
+            
+            class Tiger extends Animal {
+            void sound() {
+            System.out.println("Growl");
+            }
+            }
+            
+            class Main {
+            public static void main(String ap[]) {
+            Animal lion = new Lion();
+            Animal tiger = new Tiger();
+            lion.sound();
+            tiger.sound();
+            }
+            }   
+    </pre>
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>11</h1>
+      <pre> 
+        import java.util.Scanner;
+
+        class Check 
+        {
+       
+           public static void main(String[] args) {
+               Scanner sc = new Scanner(System.in);
+       
+               // Get the matrix dimensions
+               System.out.println("Enter the number of rows and columns of the matrix (should be square):");
+               int n = sc.nextInt();
+       
+               // Initialize the matrix
+               int[][] matrix = new int[n][n];
+       
+               // Input matrix elements
+               System.out.println("Enter the elements of the matrix:");
+               for (int i = 0; i < n; i++) {
+                   for (int j = 0; j < n; j++) {
+                       matrix[i][j] = sc.nextInt();
+                   }
+               }
+       
+               // Check if the matrix is an identity matrix
+               boolean isIdentity = true;
+               for (int i = 0; i < n; i++) {
+                   for (int j = 0; j < n; j++) {
+                       if (i == j && matrix[i][j] != 1) {
+                           isIdentity = false;
+                           break;
+                       } else if (i != j && matrix[i][j] != 0) {
+                           isIdentity = false;
+                           break;
+                       }
+                   }
+                   if (!isIdentity) {
+                       break;
+                   }
+               }
+       
+               // Output result
+               if (isIdentity) {
+                   System.out.println("The matrix is an identity matrix.");
+               } else {
+                   System.out.println("The matrix is NOT an identity matrix.");
+               }
+       
+               sc.close();
+           }
+       }
+    </pre>    
+</body>
+</html> 

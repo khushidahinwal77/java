@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>question2</h1>
+    <pre>
+        import java.util.Arrays;
+
+            class ElementFrequency {
+                   public static void main(String[] args) {
+                   // Original array
+                   int[] array = {1, 2, 2, 3, 4, 4, 4, 5};
+
+                     // Sort the array
+                    Arrays.sort(array);
+
+        
+                     int frequency = 1;
+
+        
+                      for (int i = 0; i < array.length; i++) {
+                         // Check if the current element is the same as the next element
+                         if (i < array.length - 1 && array[i] == array[i + 1]) {
+                         frequency++;
+                      } else {
+                     // Print the current element and its frequency
+                     System.out.println(array[i] + ": " + frequency);
+                     // Reset the frequency for the next element
+                     frequency = 1;
+                     }
+                   }
+                  }
+                 }
+
+    </pre>
+    
+</body>
+</html>
